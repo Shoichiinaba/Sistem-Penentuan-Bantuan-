@@ -1,5 +1,27 @@
   <link href="<?php echo base_url('assets/plugins/iCheck/square/blue.css'); ?>" rel="stylesheet" type="text/css" />
 <div class="content-wrapper">
+
+<?php if ($this->session->flashdata('sukses')):?>
+          <script>
+            swal({
+              title: 'Data Admin!!',
+              text: "<?php echo $this->session->flashdata('sukses');?>",
+              type: 'success'
+            });
+          </script>
+        <?php endif; ?>
+
+        <?php if ($this->session->flashdata('error')):?>
+          <script>
+            swal({
+              title: 'Oops!!',
+              text: "<?php echo $this->session->flashdata('error');?>",
+              type: 'error'
+            });
+          </script>
+        <?php endif; ?>
+
+
   <section class="content">
           <body class="hold-transition register-page">
                   <div class="register-box">
@@ -12,7 +34,7 @@
 
                       <form action="<?= base_url('admin/tambah_user')?>" method="post">
                         <div class="form-group has-feedback">
-                          <input type="text" name="nama" class="form-control" placeholder="Full name" value="<?= set_value('nama'); ?>">
+                          <input type="text" name="nama" class="form-control" autofocus="" placeholder="Full name" value="<?= set_value('nama'); ?>">
                           <span class="glyphicon glyphicon-user form-control-feedback"></span>
                           <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>

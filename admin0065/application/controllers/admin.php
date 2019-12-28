@@ -71,7 +71,7 @@ class admin extends AUTH_Controller {
 			$data =[
 
 				'username' => $this->input->post('username'),
-				'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
+				'password' => md5($this->input->post('password1')),
 				'nama' => $this->input->post('nama'),
 				'email' => $this->input->post('email'),
 				'foto' => 'default.png',
@@ -80,7 +80,7 @@ class admin extends AUTH_Controller {
 			];
 			$this->db->insert('admin',$data);
 			$this->session->set_flashdata('sukses',"Selamat Anda Berhasil Registrasi");
-			redirect('admin/tampil_admin');
+			redirect('admin/tambah_user');
 
 
 		}

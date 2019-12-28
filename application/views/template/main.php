@@ -20,7 +20,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="<?php echo base_url('assets/js/sweetalert2.all.min.css'); ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url('assets/lib/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
 
   <!-- Libraries CSS Files -->
@@ -34,15 +33,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link href="<?php echo base_url('assets/css/custom-button.min.css'); ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url('assets/css/custom-button.css'); ?>" rel="stylesheet" type="text/css" />
   <!-- bootstrap datepicker -->
-<link rel="stylesheet" href="<?php echo base_url('assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css'); ?>assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-<body>
-
-
 
 
    <!-- JavaScript Libraries -->
   <script src="<?php echo base_url('assets/lib/jquery/jquery.min.js'); ?>"></script>
-  <script src="<?php echo base_url('assets/lib/jquery/jquery-migrate.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/lib/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/lib/superfish/superfish.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/lib/easing/easing.min.js'); ?>"></script>
@@ -50,14 +44,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <script src="<?php echo base_url('assets/lib/wow/wow.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/lib/venobox/venobox.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/lib/owlcarousel/owl.carousel.min.js'); ?>"></script>
-<!-- bootstrap datepicker -->
-<script src="<?php echo base_url('assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js'); ?>"></script>
-
   <!-- Template Main Javascript File -->
   <script src="<?php echo base_url('assets/contactform/contactform.js'); ?>"></script>
-   <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
-   <!-- sweetalert -->
-   <script src="<?= base_url(); ?>assets/js/sweetalert2.all.min.js"></script>
+  <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 
    
 

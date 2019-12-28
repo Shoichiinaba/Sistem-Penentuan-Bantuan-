@@ -29,13 +29,13 @@
                 <form id="form_search" action="<?php echo site_url('client/search');?>" method="GET">
                 
                   <div class="form-group">
-                 <div class="input-group input-group-xs">
-                <input type="text" class="form-control" name="no_kk" autofocus='' required='' autocomplete='off' placeholder="Masukan No KK Anda!!">
-                <span class="input-group-btn">
-                      <button type="submit" name="submit" class="btn btn-secondary btn-sm btn-flat">Cari!</button>
-                    </span>
-              </div>
-            </div>
+                    <div class="input-group input-group-xs">
+                      <input type="text" class="form-control" name="no_kk" autofocus="" required='' placeholder="Masukan No KK Anda!!">
+                        <span class="input-group-btn">
+                          <button type="submit" name="submit" class="btn btn-secondary btn-sm btn-flat">Cari!</button>
+                        </span>
+                    </div>
+                  </div>
                 </form>
               </div>
           </div>

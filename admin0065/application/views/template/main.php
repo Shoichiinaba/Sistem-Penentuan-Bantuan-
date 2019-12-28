@@ -35,7 +35,7 @@
         <link href="<?php echo base_url('assets/bower_components/select2/dist/css/select2.min.css'); ?>" rel="stylesheet" type="text/css" />
         <!-- DataTables -->
         <link href="<?php echo base_url('assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
-
+        <link href="<?php echo base_url('assets/bower_components/bootstrap-slider/slider.css'); ?>" rel="stylesheet" type="text/css" />
 
         
    
