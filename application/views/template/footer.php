@@ -52,7 +52,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <?= date('Y')?> <strong>System Bantuan kota Semarang</strong>. All Rights Reserved
+        &copy; Copyright <script>document.write(new Date().getFullYear());</script> <strong>System Bantuan kota Semarang</strong>. All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="https://shoichiinaba.github.io/">Basio Group</a>
