@@ -83,7 +83,8 @@ class tentukan_bantuan extends AUTH_Controller {
     	$daya_listrik = $_POST['daya_listrik'];
     	$dapat = $_POST['dapat'];
     	$tidak_dapat = $_POST['Tidak_Dapat'];
-    	$status = $_POST['Status'];
+		$status = $_POST['Status'];
+		$tahun = date('Y');
 
     	$data = array();
     	for($i = 0; $i<count($no_kk); $i++){
@@ -101,7 +102,8 @@ class tentukan_bantuan extends AUTH_Controller {
     			'daya_listrik'=>$daya_listrik[$i],
     			'hasil_dapat'=>$dapat[$i],
     			'hasil_tdapat'=>$tidak_dapat[$i],
-    			'hasil_prediksi'=>$status[$i]
+				'hasil_prediksi'=>$status[$i],
+				'tahun'=>$tahun
     		));
     	}
     	$this->M_bantuan->insert_multiple($data);

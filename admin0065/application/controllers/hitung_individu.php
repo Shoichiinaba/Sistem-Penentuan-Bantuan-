@@ -39,8 +39,9 @@ class hitung_individu extends AUTH_Controller {
 				$hasil_dapat=$this->input->post('hasil_dapat');
 				$hasil_tdapat=$this->input->post('hasil_tdapat');
 				$hasil_prediksi=$this->input->post('hasil_prediksi');
+				$tahun=date('Y');
 			}
-		$this->M_testing->simpan($no_kk,$nama,$alamat,$status_bangunan,$jenis_lantai,$jenis_dinding,$kualitas_bang,$jenis_atap,$kualitas_atap,$sumber_air,$daya_listrik,$hasil_dapat,$hasil_tdapat,$hasil_prediksi);
+		$this->M_testing->simpan($no_kk,$nama,$alamat,$status_bangunan,$jenis_lantai,$jenis_dinding,$kualitas_bang,$jenis_atap,$kualitas_atap,$sumber_air,$daya_listrik,$hasil_dapat,$hasil_tdapat,$hasil_prediksi,$tahun);
 		$this->session->set_flashdata('sukses'," Berhasil Diinput");
 		redirect('hitung_individu');	
 	}

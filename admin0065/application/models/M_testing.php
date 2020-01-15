@@ -8,9 +8,9 @@ class M_testing extends CI_Model {
     }
 
 
-	public function simpan($no_kk,$nama,$alamat,$status_bangunan,$jenis_lantai,$jenis_dinding,$kualitas_bang,$jenis_atap,$kualitas_atap,$sumber_air,$daya_listrik,$hasil_dapat,$has_tdapat,$hasil_prediksi)
+	public function simpan($no_kk,$nama,$alamat,$status_bangunan,$jenis_lantai,$jenis_dinding,$kualitas_bang,$jenis_atap,$kualitas_atap,$sumber_air,$daya_listrik,$hasil_dapat,$has_tdapat,$hasil_prediksi,$tahun)
 	{
-        $hasil=$this->db->query("INSERT INTO hasil_testing(no_kk,nama,alamat,status_bangunan,jenis_lantai,jenis_dinding,kualitas_bang,jenis_atap,kualitas_atap,sumber_air,daya_listrik,hasil_dapat,hasil_tdapat,hasil_prediksi) VALUES ('$no_kk','$nama','$alamat','$status_bangunan','$jenis_lantai','$jenis_dinding','$kualitas_bang','$jenis_atap','$kualitas_atap','$sumber_air','$daya_listrik','$hasil_dapat','$has_tdapat','$hasil_prediksi')");
+        $hasil=$this->db->query("INSERT INTO hasil_testing(no_kk,nama,alamat,status_bangunan,jenis_lantai,jenis_dinding,kualitas_bang,jenis_atap,kualitas_atap,sumber_air,daya_listrik,hasil_dapat,hasil_tdapat,hasil_prediksi,tahun) VALUES ('$no_kk','$nama','$alamat','$status_bangunan','$jenis_lantai','$jenis_dinding','$kualitas_bang','$jenis_atap','$kualitas_atap','$sumber_air','$daya_listrik','$hasil_dapat','$has_tdapat','$hasil_prediksi','$tahun')");
         return $hasil;
     }
     function delete($params =''){

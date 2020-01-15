@@ -56,6 +56,7 @@
                                             <th width ='20%'>Hasil Dapat</th>
                                             <th width ='20%'>Hasil T. Dapat</th>
                                             <th width ='20%'>Prediksi</th>
+                                            <th width ='20%'>Tahun</th>
                                             <th width ='20%'>Action</th>
 
                                         </tr>
@@ -78,6 +79,7 @@
                                     <td><?php echo $g->hasil_dapat; ?></td>
                                     <td><?php echo $g->hasil_tdapat; ?></td>
                                     <td><?php echo $g->hasil_prediksi; ?></td>
+                                    <td><?php echo $g->tahun; ?></td>
                                     <td align="center">
 
                                       <a type="button" href="<?php echo base_url('/laporan/laprec/'.$g->no_kk); ?>" target="_blank" class="btn btn-success btn-xs"  data-placement="top"  title="Cetak"><i class="fa fa-print"></i></a>
